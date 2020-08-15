@@ -3874,15 +3874,15 @@
 
     	const click_handler_2 = ({ i }) => {$$invalidate('lock', lock = !lock); $$invalidate('active_lock', active_lock = indexToTime(i)); };
 
-    	function func({ i, j }) { 
-    	                        var z = yScale( sum(y[i].slice(0,j+1), checked) ); 
+    	function func({ i, j }) {
+    	                        var z = yScale( sum(y[i].slice(0,j+1), checked) );
     	                        return Math.min(isNaN(z) ? 0: z, height - padding.top)
     	                      }
 
     	function func_1({ i, j }) {
     	                  var top = yScaleL( sum(y[i].slice(0,j+1),checked) + 0.0001 );
     	                  var btm = yScaleL( sum(y[i].slice(0,j),checked) + 0.0001);
-    	                  var z = top - btm; 
+    	                  var z = top - btm;
     	                  if (z + yScale( sum(y[i].slice(0,j+1), checked) ) > height - padding.top) {
     	                    return top
     	                  } else {
@@ -25676,7 +25676,7 @@
     }
 
     function instance$3($$self, $$props, $$invalidate) {
-    	
+
 
       var sum = function(arr, bools){
         var x = 0;
@@ -25705,7 +25705,7 @@
         for (var k=[],ki=0; ki<m.length; ki++) {
           var _y=y.slice(), dt=ki?((m[ki-1][0])*h):0;
           for (var l=0; l<_y.length; l++) for (var j=1; j<=ki; j++) _y[l]=_y[l]+h*(m[ki-1][j])*(k[ki-1][l]);
-          k[ki]=f(t+dt,_y,dt); 
+          k[ki]=f(t+dt,_y,dt);
         }
         for (var r=y.slice(),l=0; l<_y.length; l++) for (var j=0; j<k.length; j++) r[l]=r[l]+h*(k[j][l])*(m[ki-1][j]);
         return r;
@@ -25727,17 +25727,17 @@
           if (t > InterventionTime && t < InterventionTime + duration){
             var beta = (InterventionAmt)*R0/(D_infectious);
           } else if (t > InterventionTime + duration) {
-            var beta = 0.5*R0/(D_infectious);        
+            var beta = 0.5*R0/(D_infectious);
           } else {
             var beta = R0/(D_infectious);
           }
           var a     = 1/D_incbation;
           var gamma = 1/D_infectious;
-          
+
           var S        = x[0]; // Susectable
           var E        = x[1]; // Exposed
-          var I        = x[2]; // Infectious 
-          var Mild     = x[3]; // Recovering (Mild)     
+          var I        = x[2]; // Infectious
+          var Mild     = x[3]; // Recovering (Mild)
           var Severe   = x[4]; // Recovering (Severe at home)
           var Severe_H = x[5]; // Recovering (Severe in hospital)
           var Fatal    = x[6]; // Recovering (Fatal)
@@ -25770,7 +25770,7 @@
         var P  = [];
         var TI = [];
         var Iters = [];
-        while (steps--) { 
+        while (steps--) {
           if ((steps+1) % (sample_step) == 0) {
                 //    Dead   Hospital          Recovered        Infectious   Exposed
             P.push([ N*v[9], N*(v[5]+v[6]),  N*(v[7] + v[8]), N*v[2],    N*v[1] ]);
@@ -25779,11 +25779,11 @@
             // console.log((v[0] + v[1] + v[2] + v[3] + v[4] + v[5] + v[6] + v[7] + v[8] + v[9]))
             // console.log(v[0] , v[1] , v[2] , v[3] , v[4] , v[5] , v[6] , v[7] , v[8] , v[9])
           }
-          v =integrate(method,f,v,t,dt); 
+          v =integrate(method,f,v,t,dt);
           t+=dt;
         }
-        return {"P": P, 
-                "deaths": N*v[6], 
+        return {"P": P,
+                "deaths": N*v[6],
                 "total": 1-v[0],
                 "total_infected": TI,
                 "Iters":Iters,
@@ -25803,7 +25803,7 @@
         var Pmaxstart = 0;
 
         var dragstarted = function (d) {
-          dragstarty = event.y;  
+          dragstarty = event.y;
           Pmaxstart  = Pmax;
         };
 
@@ -25837,7 +25837,7 @@
         var InterventionTimeStart = 0;
 
         var dragstarted = function (d) {
-          dragstarty = event.x;  
+          dragstarty = event.x;
           InterventionTimeStart = InterventionTime;
           $$invalidate('Plock', Plock = Pmax);
           $$invalidate('lock', lock = true);
@@ -25862,7 +25862,7 @@
         var durationStart = 0;
 
         var dragstarted = function (d) {
-          dragstarty = event.x;  
+          dragstarty = event.x;
           durationStart = duration;
           $$invalidate('Plock', Plock = Pmax);
           $$invalidate('lock', lock = true);
@@ -26167,13 +26167,13 @@
     	};
 
     	$$invalidate('Time_to_death', Time_to_death     = 32);
-    	$$invalidate('logN', logN              = Math.log(7e6));
-    	$$invalidate('I0', I0                = 1);
-    	$$invalidate('R0', R0                = 2.2);
-    	$$invalidate('D_incbation', D_incbation       = 5.2);
-    	$$invalidate('D_infectious', D_infectious      = 2.9);
-    	$$invalidate('D_recovery_mild', D_recovery_mild   = (14 - 2.9));
-    	$$invalidate('D_recovery_severe', D_recovery_severe = (31.5 - 2.9));
+    	$$invalidate('logN', logN              = Math.log(18521)); //Total population
+    	$$invalidate('I0', I0                = 77); //Initial infected
+    	$$invalidate('R0', R0                = 0.78); //Estimated R0 from: https://www.wvpe.org/post/update-indiana-state-dept-health-offers-more-free-covid-19-testing-elkhart-county-week
+    	$$invalidate('D_incbation', D_incbation       = 5.3875); //Estimated incubation time, usually between 5-6 days: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200402-sitrep-73-covid-19.pdf?sfvrsn=5ae25bc7_6#:~:text=The%20incubation%20period%20for%20COVID,persons%20can%20be%20contagious.
+    	$$invalidate('D_infectious', D_infectious      = 3.0);
+    	$$invalidate('D_recovery_mild', D_recovery_mild   = (14 - 3.0));
+    	$$invalidate('D_recovery_severe', D_recovery_severe = (31.5 - 3.0));
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 5);
     	$$invalidate('CFR', CFR               = 0.02);
     	$$invalidate('InterventionTime', InterventionTime  = 100);
