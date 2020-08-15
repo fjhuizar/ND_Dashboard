@@ -23442,13 +23442,7 @@
     			t388 = text(".");
     			t389 = space();
     			p5 = element("p");
-    			t390 = text("Please DM me feedback ");
-    			a18 = element("a");
-    			a18.textContent = "here";
-    			t392 = text(" or email me ");
-    			a19 = element("a");
-    			a19.textContent = "here";
-    			t394 = text(". My ");
+    			t394 = text("Gabriel Goh's");
     			a20 = element("a");
     			a20.textContent = "website";
     			t396 = text(".");
