@@ -26160,9 +26160,9 @@
     	$$invalidate('D_recovery_severe', D_recovery_severe = (31.5 - 3.0));
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 5);
     	$$invalidate('CFR', CFR               = 0.02);
-    	$$invalidate('InterventionTime', InterventionTime  = 100);
-    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 2/3);
-    	Time              = 220;
+    	$$invalidate('InterventionTime', InterventionTime  = 14);
+    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 1/3);
+    	Time              = 100;
     	$$invalidate('Xmax', Xmax              = 110000);
     	$$invalidate('dt', dt                = 2);
     	$$invalidate('P_SEVERE', P_SEVERE          = 0.2);
