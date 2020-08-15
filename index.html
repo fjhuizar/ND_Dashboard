@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+@font-face { font-family: Computer Modern; src: url('cmunorm.ttf'); }
+
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+
+td{
+    width: 25%;
+    text-align: center;
+    border: 10px solid white;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+#header {
+    color:black;
+    text-align:center;
+    padding:1px;
+    font-family: Computer Modern, monospace;
+    font-size: 15px;
+}
+
+h2 {
+    width: 550px;
+    margin: auto;
+    border-width: 0px 0px 2px 0px;
+    border-color: black;
+    border-style: solid;
+    color:black;
+    text-align:center;
+    padding:10px;
+    font-family: Computer Modern, monospace;
+    font-size: 20px;
+}
+
+img {
+    border-radius: 10px;
+/*    border-width: 4px 4px 4px 4px;
+    border-color: rgb(0,0,0);
+    border-style: solid*/
+}
+
+img.imgp {
+    border-radius: 0px !important;
+/*    border-width: 4px 4px 4px 4px;
+    border-color: rgb(0,0,0);
+    border-style: solid*/
+}
+
+
+#section {
+    display:flex;
+    width: 200px;
+    padding:40px;
+    margin: auto;
+    width: 500px;
+    border-width: 0px 0px 0px 0px;
+    border-color: black;
+    border-style: dotted;
+    font-family: Computer Modern, monospace;
+    font-size: 13px;
+}
+
+
+#sectionmid {
+    display:flex;
+    width: 200px;
+    padding:40px;
+    margin: auto;
+    width: 500px;
+    border-width: 0px 0px 0px 0px;
+    border-color: black;
+    border-style: solid;
+    font-family: Computer Modern, monospace;
+    font-size: 12.5px;
+}
+
+#left
+{
+    flex:1;
+    height: 150px;
+    margin: auto;
+}
+
+#right
+{
+    flex:2;
+    color: black;
+    margin:auto;
+    margin-left: 30px;
+    padding:2px;
+}
+
+#left2
+{
+    flex:2;
+    color: black;
+    margin:auto;
+    margin-right: 30px;
+    padding:2px;
+    text-align:right;
+}
+
+#right2
+{
+    flex:1;
+    height: 150px;
+    margin: auto;
+}
+
+.clear
+{
+    clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<div id="header">
+<h1> Gabriel Goh </h1>
+</div>
+
+<h2>About</h2>
+
+<script type="text/javascript"><!--
+function gen_mail_to_link(lhs,rhs,subject)
+{
+document.write("<A HREF=\"mailto");
+document.write(":" + lhs + "@");
+document.write(rhs + "?subject=" + subject + "\">" + lhs + "@" + rhs + "<\/A>"); }
+</script>
+
+<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div id="section">
+
+    <div id="left">
+    <center>
+    <img src="face3.png" width="150px", height = "150px">
+    </center>
+    </div>
+
+    <div id = "right">
+    <b>Hi!</b><p>
+
+    Welcome to my website. I'm Gabe, machine learning researcher at OpenAI. I'm interested in interpretability, machine learning, data visualization and convex optimization.
+
+<!--     <a href = "https://www.math.ucdavis.edu/~mpf/"> Michael
+    Friedlander</a>. I am interested in Convex Optimization, Machine Learning
+    and Probability.
+ -->
+<!-- 
+    UC Davis working under
+    the supervision of <a href = "https://www.math.ucdavis.edu/~mpf/"> Michael
+    Friedlander</a>. I am interested in Convex Optimization, Machine Learning
+    and Probability.
+
+    <p> Check out my <a href="http://gabgoh.github.io/blog/">blog</a>. There I 
+    speak my mind on deep learning, nonconvex optimization, and other dark 
+    and forbidden arts.
+
+    <p> I contribute to the <a href="http://www.julialang.org">Julia</a>
+    programming language, my favorite language by far for all things technical.
+    It fully supports type checking, unicode variables, and has all the creature
+    comforts of a modern language. Check out my code and notebooks below.
+    <p>
+
+    In my free time, I tinker with Computer Graphics, Data Visualization,
+    Virtual Reality, and think deep thoughts about the internet and our place in
+    it. 
+ -->
+    <br><br>
+    <br>
+    <b>Email:</b>
+    <script> gen_mail_to_link("gabgohjh", "gmail.com","Hi") </script>
+    <br>
+    <b> Twitter: </b>
+    <a href="https://twitter.com/gabeeegoooh" class="twitter-follow-button" data-show-count="false">Follow @gabeeegoooh</a>
+    </div>
+
+</div>
+
+
+</p>
+
+<p>
+
+
+<h2>Code</h2>
+
+<div id="sectionmid">
+
+  <div id = "left2">
+
+  <b><a href = "https://github.com/MPF-Optimization-Laboratory/ConicIP.jl">ConicIP</a></b><br>
+  
+  This code
+  is a pure Julia implementation of the primal-dual predictor corrector found in
+  <a href = "http://www.cvxopt.org">cvxopt</a>, written with an emphasis on
+  robustness, brevity, portability and numerical stability.
+
+  <p><b>Examples:</b><br> LASSO, Trend Filtering, Group-LASSO, Support Vector
+  Machines (primal, dual, kernel), Support Vector Regression, Quantile
+  Regression, Robust Regression, Non-Negative Least Squares, Convex.jl integration, JuMP Integration </div>
+
+  <div id="right2">
+  <img src="soc.svg" width="150px", height = "150px">
+  </div>
+
+</div>
+
+
+<div id="section">
+
+
+  <div id="left">
+  <img src="qsip.svg" width="150px", height = "150px">
+  </div>
+
+  <div id = "right">
+
+  <b><a href = "">QSip [Coming Soon]</a></b><br>
+
+  While Quasi-Netwon (QN) methods are generally the algorithms of choice for
+  smooth, unconstrained optimization, QN methods don't generalize easily in the
+  sharp-edged, kinky world of non-smooth optimization. This is a modest step
+  forward - an implementation of a L-BFGS solver made for a class of problems
+  which prove to be extremely useful. See the examples below. Not only do we
+  achieve up to a 50x less iterations on average (no cherry picking here), 
+  it seems to finds better local minima in non-convex problems! <p>
+
+  <b>Examples</b> <br> LASSO, Logistic Regression, Maximum-Volume
+  inscribed Ellipsoid,  Non-Negative Matrix
+  factorization, Dictionary Learning, Tensor Factorization, Deep Learning.
+
+
+  </div>
+
+</div>
+
+
+<h2>Publications</h2>
+
+
+<div id="section">
+
+    <div id = "left2">
+
+    <b><a href = "http://papers.nips.cc/paper/6316-satisfying-real-world-goals-with-dataset-constraints.pdf">Satisfying Real-world Goals with Dataset Constraints</a></b><br>
+
+    There's more to the life of a machine learning model, I am sad to report,
+    than optimizing for training accuracy. And when you can't have everything
+    at once, the best thing you can do is compromise. But what better
+    compromise than the optimal one?
+
+    <br><br> <b>
+
+      <a href = "http://papers.nips.cc/paper/6316-satisfying-real-world-goals-with-dataset-constraints.pdf"> Paper</a> <br>  </b>
+
+    </div>
+
+    <div id="right2">
+    <img src="hinge.svg" width="150px", height = "150px">
+    </div>
+
+</div>
+<div id="sectionmid">
+
+    <div id = "left">
+    <img src="envelope.svg" width="150px", height = "150px">
+    </div>
+
+    <div id="right"><a href="https://arxiv.org/abs/1603.05719"> <b>Efficent Evaluation of Scaled Proximal Operators</b></a><br>
+    Here I discuss discussion the linear algebraic tricks used to solve proximal
+    subproblems efficiently. Be forewarned, the number of times I used the
+    Woodbury Matrix Identity is nearly criminal. This project led to the
+    development of QSip.
+    <br><br>
+    <b>
+    <a href="https://arxiv.org/abs/1603.05719"> Paper </a>
+    <br>
+    </b>
+
+    </div>
+</div>
+
+
+<div id="section">
+
+
+    <div id = "left2">
+
+    <b><a href = "http://arxiv.org/abs/1304.5586">Tail Bounds for Stochastic
+    Gradient Descent</a></b><br>
+
+    My first paper in grad school. Here I investigated at the role concentration
+    plays in randomized algorithms for optimization, in particular stochastic
+    gradient descent. <br><br> <b>
+
+      <a href = "http://arxiv.org/abs/1304.5586"> Paper</a> <br>  </b>
+
+    </div>
+
+    <div id="right2">
+    <img src="tail.svg" width="150px", height = "150px">
+    </div>
+
+</div>
+
+
+
+<div id="clear"></div>
+
+<h2><center>Personal Projects</center></h2>
+
+<div id="sectionmid">
+
+    <div id = "left">
+
+    <center>
+    <img src="memes.png" width="150px", height = "150px">
+    </center>
+    </div>
+
+    <div id="right"> <p> <b> <a href =
+    "http://gabgoh.github.io/adviceanimals/html/"> 4 Years of Advice Animals</a>
+    </b> <br>
+
+    I saw a beautiful spindle diagram in a natural history museum in montreal
+    (it looked a little like <a href =
+    "https://www2.estrellamountain.edu/faculty/farabee/biobk/pro_plfr.gif">this</a>
+    or <a href =
+    "https://upload.wikimedia.org/wikipedia/commons/7/76/Spindle_diagram.jpg">this</a>)
+    and I wondered if I could do something similar for memes on the
+    internet. Perhaps memes obeyed similar forces, living and dying in the
+    microclimates of our imagination. A long shot, perhaps. But philosophical
+    pretentions aside, I enjoy at least the visual analogy. Here it is - a <a
+    href="https://d3js.org/"> D3 </a> visualization of <a href =
+    "http://www.pushshift.io">Jason Braughmerger's</a> meticulously mined reddit
+    dataset showing all posts in /r/AdviceAnimal to Dec 2014 with over 50
+    up-votes. Enjoy!
+
+    <br><br> <a href =
+    "http://gabgoh.github.io/adviceanimals/html/"> Site</a> <br> <b>Making of
+    (coming soon) </b> <br> </div>    
+
+</div>
+
+
+
+<h2><center>Press</center></h2>
+
+<div id="sectionmid">
+
+    <table>
+      <tr>
+      <td> 
+        <a href="http://www.theverge.com/2016/10/24/13379208/ai-nsfw-neural-nets-deep-dream-genitals"><img src="presslogos/verge.png" width="110" class="imgp"></a>
+      </td>
+      <td> 
+        <a href="http://www.vice.com/alps/read/hangover-news-vierundzwanzig-oktober"><img src="presslogos/vice.png" width="110"></a>
+      </td>
+      <td>
+        <a href="http://www.gizmodo.co.uk/2016/10/combined-super-ai-turns-everything-into-a-penis/"><img src="presslogos/gizmodo.svg" width="110"></a>
+      </td>
+      <td> 
+        <a href = "http://www.gizmodo.com.au/2016/10/porn-images-synthesised-by-yahoos-nsfw-neural-network-is-lovecraftian-erotica"><img src="presslogos/gizmodoau.png" width="110"></a>
+      </td>
+      </tr>
+
+      <tr>
+      <td>
+        <a href = "http://gizmodo.com/after-looking-at-deep-dream-genitalia-internet-outage-1788089762"><img src="presslogos/gizmodo.png" width="110" class="imgp"></a>   
+      </td>
+      <td>
+        <a href = "https://www.oreilly.com/ideas/four-short-links-21-october-2016">
+        <img src="presslogos/OR.png" width="110">    
+        </a>
+      </td>
+      <td>
+        <a href = "http://www.theinquirer.net/inquirer/news/2474925/yahoo-is-machine-learning-the-difference-between-a-dirty-and-a-not-dirty-picture">
+        <img src="presslogos/The-Inquirer-logo.jpg" width="110" class="imgp">    
+        </a>
+      </td>
+      <td>
+        <a href = "https://www.fastcodesign.com/3064924/yahoos-nsfw-neural-network-can-spot-penises-in-pretty-much-any-picture">
+        <img src="presslogos/fast-company-logo.png" width="110">    
+        </a> 
+      </td>
+      </tr>
+
+      <tr>
+        <td>
+            <a href = "https://www.fayerwayer.com/2016/10/esta-app-de-inteligencia-artificial-puede-crear-imagenes-de-genitales-a-partir-de-fotos-reales-nsfw/">
+    <img src="presslogos/fayerwayer.png" width="110">    
+    </a>  
+        </td>
+        <td>
+
+    <a href = "http://www.wired.co.uk/article/wired-awake-241016">
+    <img src="presslogos/Wired_logo.svg" width="110" class="imgp">    
+    </a>  
+        </td>
+        <td>
+
+    <a href = "http://boingboing.net/2016/10/21/using-machine-learning-to-synt.html">
+    <img src="presslogos/boing.png" width="110" class="imgp">    
+    </a>  
+        </td>
+        <td>
+
+    <a href = "http://uproxx.com/technology/yahoo-image-blocker/#">
+    <img src="presslogos/uproxx.png" width="110" class="imgp">    
+    </a>  
+        </td>        
+      </tr>
+
+    </table>
+
+
+</div>
+
+<!-- 
+<div id="section">
+
+    <div id = "left2"> <b> <a href = "http://gfycat.com/CheerfulAptBuffalo">Some
+    </a> <a href = "http://gfycat.com/RedCandidGrayling">Deep </a>
+    Dreams</a></b> </b> <br> To the true believers, <a href =
+    "https://github.com/google/deepdream"> Deep Dreaming </a> is merely a
+    playful exercise in visualizing a neural net, but to me, it was the vector
+    which destroyed my skepticism on the dark art of deep learning. How else
+    could a dense matrix of weights see eyes in the clouds and doggy tails on the
+    grooves of bicycle helmets? I couldn't wait to try the code for myself; here
+    are some deep dreams I made using code available online.
+    </div>
+
+    <div id="right2">
+    <img src="dreams.png" width="150px", height = "150px">
+    </div>
+
+</div> -->
+
+</p>
+
+</p>
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65931696-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
