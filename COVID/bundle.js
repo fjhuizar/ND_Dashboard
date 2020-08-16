@@ -22756,7 +22756,7 @@
     			link = element("link");
     			t0 = space();
     			h2 = element("h2");
-    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/15/2020)";
+    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/16/2020)";
     			t2 = space();
     			div75 = element("div");
     			div50 = element("div");
@@ -23192,15 +23192,16 @@
     			t234 = space();
     			div118 = element("div");
     			t235 = space();
-          //////////////////HERE//////////////////////
+
+				//START EDITING HERE
     			p0 = element("p");
-    			p0.textContent = "As Notre Dame has recently opened for a Fall 2020 semester, many students, parents, faculty, and staff are interested in how COVID19 will impact our community. To address this, a calculator for case predictions was adapted from Gabriel Goh's calculator and source code. I attribute all of this work to him and his collaborators.";
+    			p0.textContent = "As Notre Dame has recently opened for a Fall 2020 semester, many students, parents, faculty, and staff are interested in how COVID19 will impact our community. To address this, a calculator for case predictions was adapted from Gabriel Goh's calculator and source code. I attribute all of this work to him and his collaborators. A full list of acknowledgements can be found at the end of the page.";
     			t237 = space();
     			p1 = element("p");
     			t238 = text("This calculator implements a classical infectious disease model — ");
     			b1 = element("b");
     			a0 = element("a");
-    			a0.textContent = "SEIR";
+    			a0.textContent = "The SEIR model (Link)";
     			t240 = space();
     			t241 = text("(");
     			b2 = element("b");
@@ -23217,33 +23218,33 @@
     			span18 = element("span");
     			b5 = element("b");
     			b5.textContent = "R";
-    			t249 = text("emoved), an idealized model of spread still used in frontlines of research e.g. [");
+    			t249 = text("emoved)");
     			a1 = element("a");
-    			a1.textContent = "Wu, et. al";
-    			t251 = text(", ");
+    			//a1.textContent = "Wu, et. al";
+    			t251 = text("");
     			a2 = element("a");
-    			a2.textContent = "Kucharski et. al";
-    			t253 = text("]. The dynamics of this model are characterized by a set of four ordinary differential equations that correspond to the stages of the disease's progression:\n");
+    			//a2.textContent = "Kucharski et. al";
+    			t253 = text(". Susceptible: Population able to contract the disease. Exposed: Those who have been exposed to an infectious person. Infectious: Those capable of transmitting the disease. Recovered: Those who have become immune either through recovery or vaccination. The dynamics of this model are characterized by a set of four ordinary differential equations that correspond to the stages of the disease's progression:\n");
     			span19 = element("span");
-    			t254 = text("\nIn addition to the transmission dynamics, this model allows the use of supplemental timing information to model the death rate and healthcare burden.");
+    			t254 = text("");
     			t255 = space();
     			p2 = element("p");
-    			t256 = text("Note that one can use this calculator to measure one's risk exposure to the disease for any given day of the epidemic: the probability of getting infected on day ");
-    			t257 = text(t257_value);
-    			t258 = text(" given ");
+    			t256 = text("");
+    			t257 = text("");
+    			t258 = text("");
     			a3 = element("a");
-    			a3.textContent = "close contact";
-    			t260 = text(" with ");
+    			a3.textContent = "";
+    			t260 = text("");
     			input12 = element("input");
-    			t261 = text(" individuals is ");
-    			t262 = text(t262_value);
-    			t263 = text("% given an attack rate of 0.45% [");
+    			t261 = text("");
+    			t262 = text("");
+    			t263 = text("");
     			a4 = element("a");
-    			a4.textContent = "Burke et. al";
-    			t265 = text("].");
+    			//a4.textContent = "Burke et. al";
+    			t265 = text("");
     			t266 = space();
     			p3 = element("p");
-    			p3.textContent = "A sampling of the estimates for epidemic parameters are presented below:";
+    			p3.textContent = "Model parameters are adjustable and updated based on statistics relevant to St. Joseph County and Notre Dame campus. A sampling of the estimates for epidemic parameters from initial outbreaks are presented below:";
     			t268 = space();
     			div119 = element("div");
     			table = element("table");
@@ -23459,13 +23460,13 @@
     			t388 = text(".");
     			t389 = space();
     			p5 = element("p");
-    			t390 = text("Please DM me feedback ");
+    			t390 = text("Full credit for this work goes to Gabriel Goh, you can find his twitter ");
     			a18 = element("a");
     			a18.textContent = "here";
-    			t392 = text(" or email me ");
+    			t392 = text(", and his email ");
     			a19 = element("a");
     			a19.textContent = "here";
-    			t394 = text(". My ");
+    			t394 = text(". For more information, go check out his ");
     			a20 = element("a");
     			a20.textContent = "website";
     			t396 = text(".");
@@ -23484,7 +23485,7 @@
     			t404 = text(" (patients who require hospitalization but survive) and ");
     			i16 = element("i");
     			i16.textContent = "fatal";
-    			t406 = text(" (patients who require hospitalization and do not survive). Each of these variables follows its own trajectory to the final outcome, and the sum of these compartments add up to the values predicted by SEIR. Please refer to the source code for details. Note that we assume, for simplicity, that all fatalities come from hospitals, and that all fatal cases are admitted to hospitals immediately after the infectious period.");
+    			t406 = text(" (patients who require hospitalization and do not survive). Each of these variables follows its own trajectory to the final outcome, and the sum of these compartments add up to the values predicted by SEIR. Please refer to the source code for details. For simplicity, it is assumed that all fatalities come from hospitals, and that all fatal cases are admitted to hospitals immediately after the infectious period.");
     			t407 = space();
     			p7 = element("p");
     			b7 = element("b");
@@ -23492,7 +23493,7 @@
     			br17 = element("br");
     			t409 = space();
     			a21 = element("a");
-    			a21.textContent = "Steven De Keninck";
+    			a21.textContent = "Here are his collaborators that helped make this possible: Steven De Keninck";
     			t411 = text(" for RK4 Integrator. ");
     			a22 = element("a");
     			a22.textContent = "Chris Olah";
@@ -24165,7 +24166,7 @@
     			set_style(div118, "height", "12px");
     			add_location(div118, file$3, 999, 0, 37707);
           //POTENTIAL Start
-          /*
+
     			attr_dev(p0, "class", "center svelte-1vzb36m");
     			add_location(p0, file$3, 1001, 0, 37761);
     			attr_dev(a0, "href", "https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model");
@@ -24202,8 +24203,8 @@
     			attr_dev(a4, "href", "https://www.cdc.gov/mmwr/volumes/69/wr/mm6909e1.htm?s_cid=mm6909e1_w");
     			attr_dev(a4, "class", "svelte-1vzb36m");
     			add_location(a4, file$3, 1012, 576, 39784);
-    			attr_dev(p2, "class", "center svelte-1vzb36m");
-    			add_location(p2, file$3, 1011, 0, 39187);
+    			//attr_dev(p2, "class", "center svelte-1vzb36m");
+    			//add_location(p2, file$3, 1011, 0, 39187);
     			attr_dev(p3, "class", "center svelte-1vzb36m");
     			add_location(p3, file$3, 1016, 0, 39889);
     			attr_dev(th0, "class", "svelte-1vzb36m");
@@ -24466,7 +24467,7 @@
     			add_location(div121, file$3, 1142, 2, 45230);
     			set_style(div122, "margin-bottom", "30px");
     			add_location(div122, file$3, 1140, 0, 45193);
-          */
+
           //POTENTIAL END
 
     			dispose = [
@@ -24950,6 +24951,9 @@
     			insert_dev(target, t237, anchor);
     			insert_dev(target, p1, anchor);
     			append_dev(p1, t238);
+				append_dev(p1, b6);
+    			append_dev(p1, br6);
+    			append_dev(p1, t238);
     			append_dev(p1, b1);
     			append_dev(b1, a0);
     			append_dev(b1, t240);
@@ -24973,21 +24977,24 @@
     			span19.innerHTML = ctx.ode_eqn;
     			append_dev(p1, t254);
     			insert_dev(target, t255, anchor);
-    			insert_dev(target, p2, anchor);
+    			/*insert_dev(target, p2, anchor);
     			append_dev(p2, t256);
     			append_dev(p2, t257);
     			append_dev(p2, t258);
     			append_dev(p2, a3);
     			append_dev(p2, t260);
     			append_dev(p2, input12);
+				*/
 
     			set_input_value(input12, ctx.p_num_ind);
 
-    			append_dev(p2, t261);
+    			/*
+				append_dev(p2, t261);
     			append_dev(p2, t262);
     			append_dev(p2, t263);
     			append_dev(p2, a4);
     			append_dev(p2, t265);
+				*/
     			insert_dev(target, t266, anchor);
     			insert_dev(target, p3, anchor);
     			insert_dev(target, t268, anchor);
@@ -25159,7 +25166,7 @@
     			append_dev(p4, a17);
     			append_dev(p4, t388);
     			insert_dev(target, t389, anchor);
-    			insert_dev(target, p5, anchor);
+    			//insert_dev(target, p5, anchor);
     			append_dev(p5, t390);
     			append_dev(p5, a18);
     			append_dev(p5, t392);
@@ -25169,32 +25176,33 @@
     			append_dev(p5, t396);
     			insert_dev(target, t397, anchor);
     			insert_dev(target, p6, anchor);
-    			append_dev(p6, b6);
-    			append_dev(p6, br16);
-    			append_dev(p6, t399);
-    			html_tag_6.m(p6);
-    			append_dev(p6, t400);
-    			append_dev(p6, i14);
-    			append_dev(p6, t402);
-    			append_dev(p6, i15);
-    			append_dev(p6, t404);
-    			append_dev(p6, i16);
-    			append_dev(p6, t406);
+    			//append_dev(p1, b6);
+    			append_dev(p1, br16);
+    			append_dev(p1, t399);
+    			html_tag_6.m(p1);
+    			append_dev(p1, t400);
+    			append_dev(p1, i14);
+    			append_dev(p1, t402);
+    			append_dev(p1, i15);
+    			append_dev(p1, t404);
+    			append_dev(p1, i16);
+    			append_dev(p1, t406);
     			insert_dev(target, t407, anchor);
     			insert_dev(target, p7, anchor);
+				insert_dev(target, p5, anchor);
     			append_dev(p7, b7);
     			append_dev(p7, br17);
-    			append_dev(p7, t409);
-    			append_dev(p7, a21);
-    			append_dev(p7, t411);
-    			append_dev(p7, a22);
-    			append_dev(p7, t413);
-    			append_dev(p7, a23);
-    			append_dev(p7, t415);
-    			append_dev(p7, a24);
-    			append_dev(p7, t417);
-    			append_dev(p7, a25);
-    			append_dev(p7, t419);
+    			append_dev(p5, t409);
+    			append_dev(p5, a21);
+    			append_dev(p5, t411);
+    			append_dev(p5, a22);
+    			append_dev(p5, t413);
+    			append_dev(p5, a23);
+    			append_dev(p5, t415);
+    			append_dev(p5, a24);
+    			append_dev(p5, t417);
+    			append_dev(p5, a25);
+    			append_dev(p5, t419);
     			insert_dev(target, t420, anchor);
     			insert_dev(target, div122, anchor);
     			append_dev(div122, div121);
