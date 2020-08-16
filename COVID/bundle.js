@@ -26175,13 +26175,13 @@
     	$$invalidate('D_recovery_mild', D_recovery_mild   = (14 - 3.0));
     	$$invalidate('D_recovery_severe', D_recovery_severe = (31.5 - 3.0));
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 5);
-    	$$invalidate('CFR', CFR               = 0.02);
+    	$$invalidate('CFR', CFR               = 0.02); // Fatlity Rate
     	$$invalidate('InterventionTime', InterventionTime  = 14);
     	$$invalidate('OMInterventionAmt', OMInterventionAmt = 1/3);
     	Time              = 100;
     	$$invalidate('Xmax', Xmax              = 110000);
-    	$$invalidate('dt', dt                = 2);
-    	$$invalidate('P_SEVERE', P_SEVERE          = 0.2);
+    	$$invalidate('dt', dt                = 1);
+    	$$invalidate('P_SEVERE', P_SEVERE          = 0.2); //Hospital Rate
     	$$invalidate('duration', duration          = 7*12*1e10);
     	$$invalidate('checked', checked = [true, true, false, true, true]);
     	$$invalidate('lock', lock           = false);
