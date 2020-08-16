@@ -26171,12 +26171,12 @@
     	$$invalidate('I0', I0                = 77); //Initial infected
     	$$invalidate('R0', R0                = 1.08); //Estimated R0 from: https://rt.live/us/IN
     	$$invalidate('D_incbation', D_incbation       = 5.4); //Estimated incubation time, usually between 5-6 days: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200402-sitrep-73-covid-19.pdf?sfvrsn=5ae25bc7_6#:~:text=The%20incubation%20period%20for%20COVID,persons%20can%20be%20contagious.
-    	$$invalidate('D_infectious', D_infectious      = 3.0);
-    	$$invalidate('D_recovery_mild', D_recovery_mild   = (14 - 3.0));
-    	$$invalidate('D_recovery_severe', D_recovery_severe = (31.5 - 3.0));
+    	$$invalidate('D_infectious', D_infectious      = 5.0);
+    	$$invalidate('D_recovery_mild', D_recovery_mild   = (14 - 5.0));
+    	$$invalidate('D_recovery_severe', D_recovery_severe = (31.5 - 5.0));
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 5);
     	$$invalidate('CFR', CFR               = 0.02); // Fatlity Rate
-    	$$invalidate('InterventionTime', InterventionTime  = 14);
+    	$$invalidate('InterventionTime', InterventionTime  = 21);
     	$$invalidate('OMInterventionAmt', OMInterventionAmt = 1/3);
     	Time              = 100;
     	$$invalidate('Xmax', Xmax              = 110000);
