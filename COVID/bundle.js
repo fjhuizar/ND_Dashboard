@@ -23192,6 +23192,8 @@
     			t234 = space();
     			div118 = element("div");
     			t235 = space();
+          //////////////////HERE//////////////////////
+          /*
     			p0 = element("p");
     			p0.textContent = "As Notre Dame has recently opened for a Fall 2020 semester, many students, parents, faculty, and staff are interested in how COVID19 will impact our community. To address this, a calculator for case predictions was adapted from Gabriel Goh's calculator and source code. I attribute all of this work to him and his collaborators.";
     			t237 = space();
@@ -23513,6 +23515,7 @@
     			t422 = space();
     			form = element("form");
     			textarea = element("textarea");
+          */ //END OUTPUT CUT
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.css");
     			attr_dev(link, "integrity", "sha384-bsHo4/LA+lkZv61JspMDQB9QP1TtO4IgOf2yYS+J6VdAYLVyx1c3XKcsHh0Vy8Ws");
