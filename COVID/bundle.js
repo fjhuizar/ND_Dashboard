@@ -25764,7 +25764,7 @@
           return [dS, dE, dI, dMild, dSevere, dSevere_H, dFatal, dR_Mild, dR_Severe, dR_Fatal]
         }
 
-        var v = [1 - I0/N, 0, I0/N, 0, 0, 0, 0, 10/N, 0, 0];//INITIAL CONDITIONS
+        var v = [1 - I0/N, 0/N, I0/N, 0/N, 0/N, 0/N, 0/N, 0/N, 0/N, 0/N];//INITIAL CONDITIONS
         //[Susceptible, Exposed, Infectious, Recovering (Mild), Recovering (Severe at home), Recovering (Severe in hospital), Recovering (Fatal), Recovered Mild, Recovered Severe, Dead]
         var t = 0;
 
