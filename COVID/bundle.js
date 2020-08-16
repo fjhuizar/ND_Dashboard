@@ -23469,7 +23469,7 @@
     			t394 = text(". For more information, go check out his ");
     			a20 = element("a");
     			a20.textContent = "website";
-    			t396 = text(".");
+    			t396 = text(". Here are his collaborators that helped make this possible: ");
     			t397 = space();
     			p6 = element("p");
     			b6 = element("b");
@@ -23493,7 +23493,7 @@
     			br17 = element("br");
     			t409 = space();
     			a21 = element("a");
-    			a21.textContent = "Here are his collaborators that helped make this possible: Steven De Keninck";
+    			a21.textContent = "Steven De Keninck";
     			t411 = text(" for RK4 Integrator. ");
     			a22 = element("a");
     			a22.textContent = "Chris Olah";
