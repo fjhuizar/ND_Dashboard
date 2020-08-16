@@ -23193,7 +23193,6 @@
     			div118 = element("div");
     			t235 = space();
     			p0 = element("p");
-          p0.setAttribute("id", "gitgud")
     			p0.textContent = "As Notre Dame has recently opened for a Fall 2020 semester, many students, parents, faculty, and staff are interested in how COVID19 will impact our community. To address this, a calculator for case predictions was adapted from Gabriel Goh's calculator and source code. I attribute all of this work to him and his collaborators.";
     			t237 = space();
     			p1 = element("p");
@@ -23217,36 +23216,42 @@
     			span18 = element("span");
     			b5 = element("b");
     			b5.textContent = "R";
-    			t249 = text("emoved), an idealized model of spread still used in frontlines of research e.g. [");
+    			t249 = text("emoved)");
     			a1 = element("a");
-    			a1.textContent = "Wu, et. al";
-    			t251 = text(", ");
+          a1.setAttribute("id", "del1")
+    			a1.textContent = "";
+    			t251 = text("");
     			a2 = element("a");
-    			a2.textContent = "Kucharski et. al";
-    			t253 = text("]. The dynamics of this model are characterized by a set of four ordinary differential equations that correspond to the stages of the disease's progression:\n");
+          a2.setAttribute("id", "del2")
+    			a2.textContent = "";
+    			t253 = text("The dynamics of this model are characterized by a set of four ordinary differential equations that correspond to the stages of the disease's progression:\n");
     			span19 = element("span");
-    			t254 = text("\nIn addition to the transmission dynamics, this model allows the use of supplemental timing information to model the death rate and healthcare burden.");
+    			t254 = text("");
     			t255 = space();
     			p2 = element("p");
-    			t256 = text("Note that one can use this calculator to measure one's risk exposure to the disease for any given day of the epidemic: the probability of getting infected on day ");
-    			t257 = text(t257_value);
-    			t258 = text(" given ");
+    			t256 = text("");
+    			t257 = text("");
+    			t258 = text(" ");
     			a3 = element("a");
-    			a3.textContent = "close contact";
-    			t260 = text(" with ");
+          a3.setAttribute("id", "del3")
+    			a3.textContent = "";
+    			t260 = text(" ");
     			input12 = element("input");
-    			t261 = text(" individuals is ");
-    			t262 = text(t262_value);
-    			t263 = text("% given an attack rate of 0.45% [");
+          input12.setAttribute("id", "del4")
+    			t261 = text("");
+    			t262 = text("");
+    			t263 = text("");
     			a4 = element("a");
-    			a4.textContent = "Burke et. al";
-    			t265 = text("].");
+          a4.setAttribute("id", "del5")
+    			a4.textContent = "";
+    			t265 = text("");
     			t266 = space();
     			p3 = element("p");
     			p3.textContent = "A sampling of the estimates for epidemic parameters are presented below:";
     			t268 = space();
     			div119 = element("div");
     			table = element("table");
+          table.setAttribute("id", "del6")
     			tr0 = element("tr");
     			th0 = element("th");
     			t269 = space();
@@ -23450,24 +23455,28 @@
     			td55 = element("td");
     			t383 = space();
     			p4 = element("p");
-    			t384 = text("See [");
+    			t384 = text("");
     			a16 = element("a");
-    			a16.textContent = "Liu et. al";
-    			t386 = text("] detailed survey of current estimates of the reproduction number. Parameters for the diseases' clinical characteristics are taken from the following ");
+          a16.setAttribute("id", "del7")
+    			a16.textContent = "";
+    			t386 = text("");
     			a17 = element("a");
-    			a17.textContent = "WHO Report";
-    			t388 = text(".");
+          a17.setAttribute("id", "del8")
+    			a17.textContent = "";
+    			t388 = text("");
     			t389 = space();
     			p5 = element("p");
-    			t390 = text("Please DM me feedback ");
+    			t390 = text("");
     			a18 = element("a");
-    			a18.textContent = "here";
-    			t392 = text(" or email me ");
+          a18.setAttribute("id", "del9")
+    			a18.textContent = "";
+    			t392 = text("");
     			a19 = element("a");
-    			a19.textContent = "here";
-    			t394 = text(". My ");
+          a19.setAttribute("id", "del10")
+    			a19.textContent = "";
+    			t394 = text("Please see Gabriel Goh's personal website. This work was only possible through him. The link is");
     			a20 = element("a");
-    			a20.textContent = "website";
+    			a20.textContent = "here";
     			t396 = text(".");
     			t397 = space();
     			p6 = element("p");
@@ -23510,10 +23519,12 @@
     			div122 = element("div");
     			div121 = element("div");
     			div120 = element("div");
-    			div120.textContent = "Export parameters:";
+    			div120.textContent = "";
     			t422 = space();
     			form = element("form");
+          form.setAttribute("id", "del11")
     			textarea = element("textarea");
+          textArea.setAttribute("id", "del12")
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.css");
     			attr_dev(link, "integrity", "sha384-bsHo4/LA+lkZv61JspMDQB9QP1TtO4IgOf2yYS+J6VdAYLVyx1c3XKcsHh0Vy8Ws");
@@ -26279,6 +26290,18 @@
     const target = document.body;
     new App({ target, props: { } });
 
-    document.getElementById("gitgud").style.display = "none";
+    document.getElementById("del1").style.display = "none";
+    document.getElementById("del2").style.display = "none";
+    document.getElementById("del3").style.display = "none";
+    document.getElementById("del4").style.display = "none";
+    document.getElementById("del5").style.display = "none";
+    document.getElementById("del6").style.display = "none";
+    document.getElementById("del7").style.display = "none";
+    document.getElementById("del8").style.display = "none";
+    document.getElementById("del9").style.display = "none";
+    document.getElementById("del10").style.display = "none";
+    document.getElementById("del11").style.display = "none";
+    document.getElementById("del12").style.display = "none";
+
 }());
 //# sourceMappingURL=bundle.js.map
