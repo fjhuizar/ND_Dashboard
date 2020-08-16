@@ -24164,6 +24164,8 @@
     			set_style(div118, "position", "relative");
     			set_style(div118, "height", "12px");
     			add_location(div118, file$3, 999, 0, 37707);
+          //POTENTIAL Start
+          /*
     			attr_dev(p0, "class", "center svelte-1vzb36m");
     			add_location(p0, file$3, 1001, 0, 37761);
     			attr_dev(a0, "href", "https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model");
@@ -24464,6 +24466,8 @@
     			add_location(div121, file$3, 1142, 2, 45230);
     			set_style(div122, "margin-bottom", "30px");
     			add_location(div122, file$3, 1140, 0, 45193);
+          */
+          //POTENTIAL END
 
     			dispose = [
     				listen_dev(div64, "mousedown", ctx.lock_yaxis),
