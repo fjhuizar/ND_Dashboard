@@ -26175,7 +26175,7 @@
     	$$invalidate('D_recovery_mild', D_recovery_mild   = (14 - 5.0));
     	$$invalidate('D_recovery_severe', D_recovery_severe = (31.5 - 5.0));
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 5);
-    	$$invalidate('CFR', CFR               = 0.0393); // Fatlity Rate from: https://www.worldometers.info/coronavirus/usa/indiana/
+    	$$invalidate('CFR', CFR               = 0.02303); // Fatlity Rate
     	$$invalidate('InterventionTime', InterventionTime  = 21);
     	$$invalidate('OMInterventionAmt', OMInterventionAmt = 1/3);
     	Time              = 100;
