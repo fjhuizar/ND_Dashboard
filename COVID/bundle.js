@@ -23989,8 +23989,8 @@
     			set_style(input1, "margin-bottom", "8px");
     			attr_dev(input1, "type", "range");
     			attr_dev(input1, "min", 5);
-    			attr_dev(input1, "max", "25");
-    			attr_dev(input1, "step", "0.01");
+    			attr_dev(input1, "max", "10");
+    			attr_dev(input1, "step", "0.1");
     			add_location(input1, file$3, 939, 6, 34156);
     			add_location(br3, file$3, 940, 125, 34383);
     			attr_dev(div83, "class", "paneldesc svelte-1vzb36m");
@@ -24003,7 +24003,7 @@
     			attr_dev(input2, "class", "range svelte-1vzb36m");
     			attr_dev(input2, "type", "range");
     			attr_dev(input2, "min", 1);
-    			attr_dev(input2, "max", "10000");
+    			attr_dev(input2, "max", "500");
     			attr_dev(input2, "step", "1");
     			add_location(input2, file$3, 942, 6, 34441);
     			attr_dev(div85, "class", "column svelte-1vzb36m");
