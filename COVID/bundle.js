@@ -26291,17 +26291,17 @@
     new App({ target, props: { } });
 
     document.getElementById("del1").style.display = "none";
-    //document.getElementById("del2").style.display = "none";
-    //document.getElementById("del3").style.display = "none";
-    //document.getElementById("del4").style.display = "none";
-    //document.getElementById("del5").style.display = "none";
-    //document.getElementById("del6").style.display = "none";
-    //document.getElementById("del7").style.display = "none";
-    //document.getElementById("del8").style.display = "none";
-    //document.getElementById("del9").style.display = "none";
-    //document.getElementById("del10").style.display = "none";
-    //document.getElementById("del11").style.display = "none";
-    //document.getElementById("del12").style.display = "none";
+    document.getElementById("del2").style.display = "none";
+    document.getElementById("del3").style.display = "none";
+    document.getElementById("del4").style.display = "none";
+    document.getElementById("del5").style.display = "none";
+    document.getElementById("del6").style.display = "none";
+    document.getElementById("del7").style.display = "none";
+    document.getElementById("del8").style.display = "none";
+    document.getElementById("del9").style.display = "none";
+    document.getElementById("del10").style.display = "none";
+    document.getElementById("del11").style.display = "none";
+    document.getElementById("del12").style.display = "none";
 
 }());
 //# sourceMappingURL=bundle.js.map
