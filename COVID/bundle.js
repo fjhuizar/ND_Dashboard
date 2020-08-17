@@ -22756,7 +22756,7 @@
     			link = element("link");
     			t0 = space();
     			h2 = element("h2");
-    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/16/2020 9:30PM EST)";
+    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/16/2020 9:45PM EST)";
     			t2 = space();
     			div75 = element("div");
     			div50 = element("div");
@@ -26184,7 +26184,7 @@
     	$$invalidate('Time_to_death', Time_to_death     = 18.5); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('logN', logN              = Math.log(18521)); //Total population
     	$$invalidate('I0', I0                = 45); //Initial infected
-    	$$invalidate('R0', R0                = 6.54); //Estimated R0 from: https://rt.live/us/IN
+    	$$invalidate('R0', R0                = 3.076803); //Estimated R0 from: https://rt.live/us/IN
     	$$invalidate('D_incbation', D_incbation       = 5.4); //Estimated incubation time, usually between 5-6 days: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200402-sitrep-73-covid-19.pdf?sfvrsn=5ae25bc7_6#:~:text=The%20incubation%20period%20for%20COVID,persons%20can%20be%20contagious.
     	$$invalidate('D_infectious', D_infectious      = 5.0); //How long someone is infectious
     	$$invalidate('D_recovery_mild', D_recovery_mild   = (11)); // https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
@@ -26192,7 +26192,7 @@
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 12);//https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('CFR', CFR               = 0.023); // Fatlity Rate
     	$$invalidate('InterventionTime', InterventionTime  = 7);
-    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 2/3);
+    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 1/3);
     	Time              = 100;
     	$$invalidate('Xmax', Xmax              = 110000);
     	$$invalidate('dt', dt                = 1);
