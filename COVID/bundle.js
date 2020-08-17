@@ -3097,6 +3097,16 @@
     function create_each_block_3(ctx) {
     	var g, text_1, t0_value = ctx.i == 0 ? "Day ":"" + "", t0, t1_value = ctx.i + "", t1, g_transform_value;
 
+        // Change t1_value to display dates rather than days since the start of the simulation
+        var today = new Date();
+        var day = new Date();
+
+        day.setDate(today.getDate() + ctx.i);
+        var d = day.getDate();
+        var m = day.getMonth()+1;  // January is zero
+        t1_value = m + "/" + d;
+
+
     	const block = {
     		c: function create() {
     			g = svg_element("g");
@@ -22756,7 +22766,7 @@
     			link = element("link");
     			t0 = space();
     			h2 = element("h2");
-    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/16/2020 9:45PM EST)";
+    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/17/2020 12:00AM EST)";
     			t2 = space();
     			div75 = element("div");
     			div50 = element("div");
