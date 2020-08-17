@@ -22766,7 +22766,7 @@
     			link = element("link");
     			t0 = space();
     			h2 = element("h2");
-    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/17/2020 12:00AM EST)";
+    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/17/2020 1:30PM EST)";
     			t2 = space();
     			div75 = element("div");
     			div50 = element("div");
@@ -26193,17 +26193,17 @@
 
     	$$invalidate('Time_to_death', Time_to_death     = 18.5); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('logN', logN              = Math.log(18521)); //Total population
-    	$$invalidate('I0', I0                = 45); //Initial infected
-    	$$invalidate('R0', R0                = 3.076803); //Estimated R0 from: https://rt.live/us/IN
+    	$$invalidate('I0', I0                = 58); //Initial infected
+    	$$invalidate('R0', R0                = 3.015123); //Estimated R0 from: https://rt.live/us/IN
     	$$invalidate('D_incbation', D_incbation       = 5.4); //Estimated incubation time, usually between 5-6 days: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200402-sitrep-73-covid-19.pdf?sfvrsn=5ae25bc7_6#:~:text=The%20incubation%20period%20for%20COVID,persons%20can%20be%20contagious.
     	$$invalidate('D_infectious', D_infectious      = 5.0); //How long someone is infectious
     	$$invalidate('D_recovery_mild', D_recovery_mild   = (11)); // https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('D_recovery_severe', D_recovery_severe = (22.0)); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 12);//https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
-    	$$invalidate('CFR', CFR               = 0.023); // Fatlity Rate
+    	$$invalidate('CFR', CFR               = 0.023*(1-0.68)+0.003985*0.68); // Fatlity Rate
     	$$invalidate('InterventionTime', InterventionTime  = 7);
     	$$invalidate('OMInterventionAmt', OMInterventionAmt = 1/3);
-    	Time              = 100;
+    	Time              = 98;
     	$$invalidate('Xmax', Xmax              = 110000);
     	$$invalidate('dt', dt                = 1);
     	$$invalidate('P_SEVERE', P_SEVERE          = 0.1239); //Hospital Rate: https://covidtracking.com/data/state/indiana
