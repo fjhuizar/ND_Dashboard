@@ -22766,7 +22766,7 @@
     			link = element("link");
     			t0 = space();
     			h2 = element("h2");
-    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/17/2020 1:30PM EST)";
+    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/17/2020 5:45PM EST)";
     			t2 = space();
     			div75 = element("div");
     			div50 = element("div");
@@ -26200,9 +26200,9 @@
     	$$invalidate('D_recovery_mild', D_recovery_mild   = (11)); // https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('D_recovery_severe', D_recovery_severe = (22.0)); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 12);//https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
-    	$$invalidate('CFR', CFR               = 0.023*(1-0.68)+0.003985*0.68); // Fatlity Rate
+    	$$invalidate('CFR', CFR               = (0.5*0.023+0.013488*0.5)*(1-0.68)+0.000042*0.68); // Fatlity Rate
     	$$invalidate('InterventionTime', InterventionTime  = 7);
-    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 1/3);
+    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 1/2);
     	Time              = 98;
     	$$invalidate('Xmax', Xmax              = 110000);
     	$$invalidate('dt', dt                = 1);
