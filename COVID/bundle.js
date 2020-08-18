@@ -22766,7 +22766,7 @@
     			link = element("link");
     			t0 = space();
     			h2 = element("h2");
-    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/17/2020 11:40PM EST)";
+    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/18/2020 12:30PM EST)";
     			t2 = space();
     			div75 = element("div");
     			div50 = element("div");
@@ -26193,16 +26193,16 @@
 
     	$$invalidate('Time_to_death', Time_to_death     = 18.5); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('logN', logN              = Math.log(17421)); //Total population
-    	$$invalidate('I0', I0                = 58); //Initial infected
-    	$$invalidate('R0', R0                = 3.015123*0.72+1.06*(1-0.72)); //Estimated R0 from best fit estimates using ML estimations
+    	$$invalidate('I0', I0                = 147); //Initial infected
+    	$$invalidate('R0', R0                = 20.71156*0.72+1.06*(1-0.72)); //Estimated R0 from best fit estimates using ML estimations
     	$$invalidate('D_incbation', D_incbation       = 5.4); //Estimated incubation time, usually between 5-6 days: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200402-sitrep-73-covid-19.pdf?sfvrsn=5ae25bc7_6#:~:text=The%20incubation%20period%20for%20COVID,persons%20can%20be%20contagious.
     	$$invalidate('D_infectious', D_infectious      = 5.0); //How long someone is infectious
     	$$invalidate('D_recovery_mild', D_recovery_mild   = (11)); // https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('D_recovery_severe', D_recovery_severe = (22.0)); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 12);//https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('CFR', CFR               = (0.5*0.023+0.013488*0.5)*(1-0.72)+0.000042*0.72); // Fatlity Rate
-    	$$invalidate('InterventionTime', InterventionTime  = 14);
-    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 1/2);
+    	$$invalidate('InterventionTime', InterventionTime  = 3);
+    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 2/3);
     	Time              = 98;
     	$$invalidate('Xmax', Xmax              = 110000);
     	$$invalidate('dt', dt                = 1);
