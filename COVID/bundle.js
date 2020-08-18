@@ -24087,8 +24087,8 @@
     			set_style(input6, "margin-bottom", "8px");
     			attr_dev(input6, "type", "range");
     			attr_dev(input6, "min", 0); //LOWER BOUND CFR
-    			attr_dev(input6, "max", "0.05"); //UPPER BOUND CFR
-    			attr_dev(input6, "step", "0.0000001");
+    			attr_dev(input6, "max", "0.03"); //UPPER BOUND CFR
+    			attr_dev(input6, "step", "0.00000001");
     			add_location(input6, file$3, 970, 6, 35979);
     			add_location(br8, file$3, 971, 133, 36215);
     			attr_dev(div101, "class", "paneldesc svelte-1vzb36m");
@@ -26201,8 +26201,8 @@
     	$$invalidate('D_recovery_severe', D_recovery_severe = (22.0)); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 12);//https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('CFR', CFR               = 0.003*(1-0.72)+0.000042*0.72); // Fatlity Rate
-    	$$invalidate('InterventionTime', InterventionTime  = 3);
-    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 9/10);
+    	$$invalidate('InterventionTime', InterventionTime  = 1);
+    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 8.5/10);
     	Time              = 98;
     	$$invalidate('Xmax', Xmax              = 110000);
     	$$invalidate('dt', dt                = 1);
