@@ -23205,7 +23205,7 @@
 
 				//START EDITING HERE
     			p0 = element("p");
-    			p0.textContent = "As Notre Dame has recently opened for a Fall 2020 semester, many students, parents, faculty, and staff are interested in how COVID19 will impact our community. To address this, a calculator for case predictions was adapted from Gabriel Goh's calculator and source code. I attribute all of this work to him and his collaborators. A full list of acknowledgements can be found at the end of the page.";
+    			p0.textContent = "As Notre Dame has recently opened for a Fall 2020 semester, many students, parents, faculty, and staff are interested in how COVID19 will impact our community. To address this, a calculator for case predictions was adapted from Gabriel Goh's calculator and source code. I attribute all of this work to him and his collaborators. A full list of acknowledgements can be found at the end of the page. For more information on how parameters in this model are selected, please see the details here: redd.it/ib106r";
     			t237 = space();
     			p1 = element("p");
     			t238 = text("This calculator implements a classical infectious disease model — ");
