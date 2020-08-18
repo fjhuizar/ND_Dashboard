@@ -26194,7 +26194,7 @@
     	$$invalidate('Time_to_death', Time_to_death     = 18.5); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('logN', logN              = Math.log(17421)); //Total population
     	$$invalidate('I0', I0                = 58); //Initial infected
-    	$$invalidate('R0', R0                = 3.015123*0.72+3.015123*2*(1-0.72)/3); //Estimated R0 from best fit estimates using ML estimations
+    	$$invalidate('R0', R0                = 3.015123*0.72+1.06*(1-0.72)); //Estimated R0 from best fit estimates using ML estimations
     	$$invalidate('D_incbation', D_incbation       = 5.4); //Estimated incubation time, usually between 5-6 days: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200402-sitrep-73-covid-19.pdf?sfvrsn=5ae25bc7_6#:~:text=The%20incubation%20period%20for%20COVID,persons%20can%20be%20contagious.
     	$$invalidate('D_infectious', D_infectious      = 5.0); //How long someone is infectious
     	$$invalidate('D_recovery_mild', D_recovery_mild   = (11)); // https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
