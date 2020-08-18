@@ -22766,7 +22766,7 @@
     			link = element("link");
     			t0 = space();
     			h2 = element("h2");
-    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/17/2020 5:45PM EST)";
+    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/17/2020 9:15PM EST)";
     			t2 = space();
     			div75 = element("div");
     			div50 = element("div");
