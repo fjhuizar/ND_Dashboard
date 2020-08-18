@@ -24034,7 +24034,7 @@
     			attr_dev(input3, "class", "range svelte-1vzb36m");
     			attr_dev(input3, "type", "range");
     			attr_dev(input3, "min", "0.01"); //LOWER BOUND INITIAL R0
-    			attr_dev(input3, "max", "5"); //UPPER BOUND INITIAL R0
+    			attr_dev(input3, "max", "20"); //UPPER BOUND INITIAL R0
     			attr_dev(input3, "step", "0.001");
     			add_location(input3, file$3, 951, 6, 34880);
     			attr_dev(div90, "class", "column svelte-1vzb36m");
