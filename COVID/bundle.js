@@ -26202,7 +26202,7 @@
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 12);//https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('CFR', CFR               = (0.5*0.023+0.013488*0.5)*(1-0.72)+0.000042*0.72); // Fatlity Rate
     	$$invalidate('InterventionTime', InterventionTime  = 3);
-    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 2/3);
+    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 9/10);
     	Time              = 98;
     	$$invalidate('Xmax', Xmax              = 110000);
     	$$invalidate('dt', dt                = 1);
