@@ -23525,7 +23525,7 @@
     			t422 = space();
     			form = element("form");
     			textarea = element("textarea");
-          //END OUTPUT CUT
+				//ATTR_DEV MODIFICATIONS FOR SLIDERS SENSITIVITY
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.css");
     			attr_dev(link, "integrity", "sha384-bsHo4/LA+lkZv61JspMDQB9QP1TtO4IgOf2yYS+J6VdAYLVyx1c3XKcsHh0Vy8Ws");
@@ -23909,8 +23909,8 @@
     			add_location(div64, file$3, 844, 14, 29714);
     			attr_dev(input0, "class", "range svelte-1vzb36m");
     			attr_dev(input0, "type", "range");
-    			attr_dev(input0, "min", "0");
-    			attr_dev(input0, "max", "1");
+    			attr_dev(input0, "min", "0"); // LOWER BOUND Intervention Amount
+    			attr_dev(input0, "max", "1"); // UPPER BOUND Intervention Amount
     			attr_dev(input0, "step", "0.01");
     			add_location(input0, file$3, 845, 14, 29824);
     			set_style(div65, "pointer-events", "all");
@@ -24001,8 +24001,8 @@
     			attr_dev(input1, "class", "range svelte-1vzb36m");
     			set_style(input1, "margin-bottom", "8px");
     			attr_dev(input1, "type", "range");
-    			attr_dev(input1, "min", 5);
-    			attr_dev(input1, "max", "10");
+    			attr_dev(input1, "min", 5); //LOWER BOUND POP'N SCALE
+    			attr_dev(input1, "max", "10"); //UPPER BOUND POP'N SCALE
     			attr_dev(input1, "step", "0.1");
     			add_location(input1, file$3, 939, 6, 34156);
     			add_location(br3, file$3, 940, 125, 34383);
@@ -24015,8 +24015,8 @@
     			add_location(div84, file$3, 941, 6, 34400);
     			attr_dev(input2, "class", "range svelte-1vzb36m");
     			attr_dev(input2, "type", "range");
-    			attr_dev(input2, "min", 1);
-    			attr_dev(input2, "max", "500");
+    			attr_dev(input2, "min", 1); //LOWER BOUND INITIAL INFECTIONS
+    			attr_dev(input2, "max", "750"); //UPPER BOUND INITIAL INFECTIONS
     			attr_dev(input2, "step", "1");
     			add_location(input2, file$3, 942, 6, 34441);
     			attr_dev(div85, "class", "column svelte-1vzb36m");
@@ -24033,9 +24033,9 @@
     			add_location(div89, file$3, 950, 6, 34839);
     			attr_dev(input3, "class", "range svelte-1vzb36m");
     			attr_dev(input3, "type", "range");
-    			attr_dev(input3, "min", "0.01");
-    			attr_dev(input3, "max", "10");
-    			attr_dev(input3, "step", "0.01");
+    			attr_dev(input3, "min", "0.01"); //LOWER BOUND INITIAL R0
+    			attr_dev(input3, "max", "5"); //UPPER BOUND INITIAL R0
+    			attr_dev(input3, "step", "0.001");
     			add_location(input3, file$3, 951, 6, 34880);
     			attr_dev(div90, "class", "column svelte-1vzb36m");
     			add_location(div90, file$3, 945, 4, 34531);
@@ -24051,8 +24051,8 @@
     			attr_dev(input4, "class", "range svelte-1vzb36m");
     			set_style(input4, "margin-bottom", "8px");
     			attr_dev(input4, "type", "range");
-    			attr_dev(input4, "min", 0.15);
-    			attr_dev(input4, "max", "24");
+    			attr_dev(input4, "min", 0.15); //LOWER BOUND DAYS INCUBATION
+    			attr_dev(input4, "max", "10"); //UPPER BOUND DAYS INCUBATION
     			attr_dev(input4, "step", "0.0001");
     			add_location(input4, file$3, 958, 6, 35251);
     			html_tag_2 = new HtmlTag(raw3_value, t186);
@@ -24066,8 +24066,8 @@
     			add_location(div95, file$3, 960, 6, 35549);
     			attr_dev(input5, "class", "range svelte-1vzb36m");
     			attr_dev(input5, "type", "range");
-    			attr_dev(input5, "min", 0);
-    			attr_dev(input5, "max", "24");
+    			attr_dev(input5, "min", 0); //LOWER BOUND DAYS INFECTIOIUS
+    			attr_dev(input5, "max", "15"); //UPPER BOUND DAYS INFECTIOUS
     			attr_dev(input5, "step", "0.01");
     			add_location(input5, file$3, 961, 6, 35605);
     			attr_dev(div96, "class", "column svelte-1vzb36m");
@@ -24086,9 +24086,9 @@
     			attr_dev(input6, "class", "range svelte-1vzb36m");
     			set_style(input6, "margin-bottom", "8px");
     			attr_dev(input6, "type", "range");
-    			attr_dev(input6, "min", 0);
-    			attr_dev(input6, "max", "1");
-    			attr_dev(input6, "step", "0.0001");
+    			attr_dev(input6, "min", 0); //LOWER BOUND CFR
+    			attr_dev(input6, "max", "0.05"); //UPPER BOUND CFR
+    			attr_dev(input6, "step", "0.0000001");
     			add_location(input6, file$3, 970, 6, 35979);
     			add_location(br8, file$3, 971, 133, 36215);
     			attr_dev(div101, "class", "paneldesc svelte-1vzb36m");
@@ -24100,8 +24100,8 @@
     			add_location(div102, file$3, 972, 6, 36232);
     			attr_dev(input7, "class", "range svelte-1vzb36m");
     			attr_dev(input7, "type", "range");
-    			attr_dev(input7, "min", input7_min_value = (ctx.D_infectious)+0.1);
-    			attr_dev(input7, "max", "100");
+    			attr_dev(input7, "min", input7_min_value = (ctx.D_infectious)+0.1); //LOWER BOUND TIME TO DEATH
+    			attr_dev(input7, "max", "30"); //UPPER BOUND TIME TO DEATH
     			attr_dev(input7, "step", "0.01");
     			add_location(input7, file$3, 973, 6, 36289);
     			attr_dev(div103, "class", "column svelte-1vzb36m");
@@ -24117,8 +24117,8 @@
     			attr_dev(input8, "class", "range svelte-1vzb36m");
     			set_style(input8, "margin-bottom", "8px");
     			attr_dev(input8, "type", "range");
-    			attr_dev(input8, "min", 0.1);
-    			attr_dev(input8, "max", "100");
+    			attr_dev(input8, "min", 0.1); //LOWER BOUND DAYS TO RECOVER SEVERE
+    			attr_dev(input8, "max", "50"); //UPPER BOUND DAYS TO RECOVER SEVERE
     			attr_dev(input8, "step", "0.01");
     			add_location(input8, file$3, 980, 6, 36630);
     			add_location(br10, file$3, 981, 124, 36873);
@@ -24131,8 +24131,8 @@
     			add_location(div108, file$3, 982, 6, 36890);
     			attr_dev(input9, "class", "range svelte-1vzb36m");
     			attr_dev(input9, "type", "range");
-    			attr_dev(input9, "min", 0.5);
-    			attr_dev(input9, "max", "100");
+    			attr_dev(input9, "min", 0.5); //LOWER BOUND DAYS RECOVERY MILD
+    			attr_dev(input9, "max", "50"); //UPPER BOUND DAYS RECOVERY MILD
     			attr_dev(input9, "step", "0.01");
     			add_location(input9, file$3, 983, 6, 36949);
     			attr_dev(div109, "class", "column svelte-1vzb36m");
@@ -24148,9 +24148,9 @@
     			attr_dev(input10, "class", "range svelte-1vzb36m");
     			set_style(input10, "margin-bottom", "8px");
     			attr_dev(input10, "type", "range");
-    			attr_dev(input10, "min", 0);
-    			attr_dev(input10, "max", "1");
-    			attr_dev(input10, "step", "0.0001");
+    			attr_dev(input10, "min", 0); //LOWER BOUND HOSPITILIZATION RATE
+    			attr_dev(input10, "max", "0.25"); //UPPER BOUND HOSPITALIZATION RATE
+    			attr_dev(input10, "step", "0.000001");
     			add_location(input10, file$3, 990, 6, 37281);
     			add_location(br12, file$3, 991, 120, 37514);
     			attr_dev(div113, "class", "paneldesc svelte-1vzb36m");
@@ -24162,8 +24162,8 @@
     			add_location(div114, file$3, 992, 6, 37531);
     			attr_dev(input11, "class", "range svelte-1vzb36m");
     			attr_dev(input11, "type", "range");
-    			attr_dev(input11, "min", 0.5);
-    			attr_dev(input11, "max", "100");
+    			attr_dev(input11, "min", 0.5); //LOWER BOUND TIME TO HOSPITALIZATION
+    			attr_dev(input11, "max", "30"); //UPPER BOUND TIME TO HOSPITALIZATION
     			attr_dev(input11, "step", "0.01");
     			add_location(input11, file$3, 993, 6, 37589);
     			attr_dev(div115, "class", "column svelte-1vzb36m");
@@ -26192,21 +26192,21 @@
     	};
 
     	$$invalidate('Time_to_death', Time_to_death     = 18.5); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
-    	$$invalidate('logN', logN              = Math.log(18521)); //Total population
+    	$$invalidate('logN', logN              = Math.log(17421)); //Total population
     	$$invalidate('I0', I0                = 58); //Initial infected
-    	$$invalidate('R0', R0                = 3.015123); //Estimated R0 from: https://rt.live/us/IN
+    	$$invalidate('R0', R0                = 3.015123*0.72+3.015123*2*(1-0.72)/3); //Estimated R0 from best fit estimates using ML estimations
     	$$invalidate('D_incbation', D_incbation       = 5.4); //Estimated incubation time, usually between 5-6 days: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200402-sitrep-73-covid-19.pdf?sfvrsn=5ae25bc7_6#:~:text=The%20incubation%20period%20for%20COVID,persons%20can%20be%20contagious.
     	$$invalidate('D_infectious', D_infectious      = 5.0); //How long someone is infectious
     	$$invalidate('D_recovery_mild', D_recovery_mild   = (11)); // https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('D_recovery_severe', D_recovery_severe = (22.0)); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 12);//https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
-    	$$invalidate('CFR', CFR               = (0.5*0.023+0.013488*0.5)*(1-0.68)+0.000042*0.68); // Fatlity Rate
-    	$$invalidate('InterventionTime', InterventionTime  = 7);
+    	$$invalidate('CFR', CFR               = (0.5*0.023+0.013488*0.5)*(1-0.72)+0.000042*0.72); // Fatlity Rate
+    	$$invalidate('InterventionTime', InterventionTime  = 14);
     	$$invalidate('OMInterventionAmt', OMInterventionAmt = 1/2);
     	Time              = 98;
     	$$invalidate('Xmax', Xmax              = 110000);
     	$$invalidate('dt', dt                = 1);
-    	$$invalidate('P_SEVERE', P_SEVERE          = 0.1239); //Hospital Rate: https://covidtracking.com/data/state/indiana
+    	$$invalidate('P_SEVERE', P_SEVERE          = 0.1239*(1-0.72)+0.72*0.1239/10); //Hospital Rate: https://covidtracking.com/data/state/indiana
     	$$invalidate('duration', duration          = 7*12*1e10);
     	$$invalidate('checked', checked = [true, true, false, true, true]);
     	$$invalidate('lock', lock           = false);
