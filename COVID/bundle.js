@@ -3095,7 +3095,7 @@
 
     // (199:6) {#each xScaleTime.ticks() as i}
     function create_each_block_3(ctx) {
-    	var g, text_1, t0_value = ctx.i == 0 ? "Day ":"" + "", t0, t1_value = ctx.i + "", t1, g_transform_value;
+    	var g, text_1, t0_value = ctx.i == 0 ? "Date ":"" + "", t0, t1_value = ctx.i + "", t1, g_transform_value;
 
         // Change t1_value to display dates rather than days since the start of the simulation
         var today = new Date();
@@ -3130,16 +3130,17 @@
     		},
 
     		p: function update(changed, ctx) {
-    			if ((changed.xScaleTime) && t0_value !== (t0_value = ctx.i == 0 ? "Day ":"" + "")) {
+    			if ((changed.xScaleTime) && t0_value !== (t0_value = ctx.i == 0 ? "Date ":"" + "")) {
     				set_data_dev(t0, t0_value);
     			}
 
     			if ((changed.xScaleTime) && t1_value !== (t1_value = ctx.i + "")) {
+					t1_value = m + "/" + d;
     				set_data_dev(t1, t1_value);
     			}
 
     			if ((changed.xScaleTime) && g_transform_value !== (g_transform_value = "translate(" + ctx.xScaleTime(ctx.i) + "," + height + ")")) {
-    				attr_dev(g, "transform", g_transform_value);
+    				attr_dev(g, "transform", g_transform_value = "translate(" + ctx.xScaleTime(ctx.i) + "," + height + ")");
     			}
     		},
 
@@ -22766,7 +22767,7 @@
     			link = element("link");
     			t0 = space();
     			h2 = element("h2");
-    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/18/2020 6:00PM EST)";
+    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/20/2020 7:00PM EST)";
     			t2 = space();
     			div75 = element("div");
     			div50 = element("div");
@@ -22848,7 +22849,7 @@
     			t44 = space();
     			div19 = element("div");
     			div15 = element("div");
-    			div15.textContent = "Infectious";
+    			div15.textContent = "Potentially Infectious";
     			t46 = space();
     			div18 = element("div");
     			div16 = element("div");
@@ -22870,7 +22871,7 @@
     			t57 = text(" / day");
     			t58 = space();
     			div20 = element("div");
-    			t59 = text("Number of infections ");
+    			t59 = text("Number of potential infections ");
     			i6 = element("i");
     			i6.textContent = "actively";
     			t61 = text(" circulating.");
@@ -22913,7 +22914,7 @@
     			t82 = space();
     			div32 = element("div");
     			div29 = element("div");
-    			div29.textContent = "Recovered";
+    			div29.textContent = "Potentially Recovered";
     			t84 = space();
     			div31 = element("div");
     			div30 = element("div");
@@ -24016,7 +24017,7 @@
     			attr_dev(input2, "class", "range svelte-1vzb36m");
     			attr_dev(input2, "type", "range");
     			attr_dev(input2, "min", 1); //LOWER BOUND INITIAL INFECTIONS
-    			attr_dev(input2, "max", "750"); //UPPER BOUND INITIAL INFECTIONS
+    			attr_dev(input2, "max", "1500"); //UPPER BOUND INITIAL INFECTIONS
     			attr_dev(input2, "step", "1");
     			add_location(input2, file$3, 942, 6, 34441);
     			attr_dev(div85, "class", "column svelte-1vzb36m");
@@ -25788,7 +25789,7 @@
           return [dS, dE, dI, dMild, dSevere, dSevere_H, dFatal, dR_Mild, dR_Severe, dR_Fatal]
         }
 
-        var v = [1 - I0/N, 0/N, I0/N, 0/N, 0/N, 0/N, 0/N, 0/N, 0/N, 0/N];//INITIAL CONDITIONS
+        var v = [1 - I0/N, 0/N, I0/N, 0/N, 0/N, 0/N, 0/N, 4*2.3/N, 0/N, 0/N];//INITIAL CONDITIONS
         //[Susceptible, Exposed, Infectious, Recovering (Mild), Recovering (Severe at home), Recovering (Severe in hospital), Recovering (Fatal), Recovered Mild, Recovered Severe, Dead]
         var t = 0;
 
@@ -26193,17 +26194,17 @@
 
     	$$invalidate('Time_to_death', Time_to_death     = 18.5); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('logN', logN              = Math.log(17421)); //Total population
-    	$$invalidate('I0', I0                = 147); //Initial infected
-    	$$invalidate('R0', R0                = 20.71156*0.72+1.06*(1-0.72)); //Estimated R0 from best fit estimates using ML estimations
+    	$$invalidate('I0', I0                = (304-4)*2.3); //Initial infected
+    	$$invalidate('R0', R0                = Math.round((4.573521*0.72+1.06*(1-0.72))*1000)/1000); //Estimated R0 from best fit estimates using ML estimations
     	$$invalidate('D_incbation', D_incbation       = 5.4); //Estimated incubation time, usually between 5-6 days: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200402-sitrep-73-covid-19.pdf?sfvrsn=5ae25bc7_6#:~:text=The%20incubation%20period%20for%20COVID,persons%20can%20be%20contagious.
     	$$invalidate('D_infectious', D_infectious      = 5.0); //How long someone is infectious
     	$$invalidate('D_recovery_mild', D_recovery_mild   = (11)); // https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('D_recovery_severe', D_recovery_severe = (22.0)); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 12);//https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('CFR', CFR               = 0.003*(1-0.72)+0.000042*0.72); // Fatlity Rate
-    	$$invalidate('InterventionTime', InterventionTime  = 1);
-    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 8.5/10);
-    	Time              = 98;
+    	$$invalidate('InterventionTime', InterventionTime  = 0);
+    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 2/3);
+    	Time              = 94;
     	$$invalidate('Xmax', Xmax              = 110000);
     	$$invalidate('dt', dt                = 1);
     	$$invalidate('P_SEVERE', P_SEVERE          = 0.1239*(1-0.72)+0.72*0.1239/10); //Hospital Rate: https://covidtracking.com/data/state/indiana
