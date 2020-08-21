@@ -22767,7 +22767,7 @@
     			link = element("link");
     			t0 = space();
     			h2 = element("h2");
-    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/21/2020 2:00PM EST)";
+    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/21/2020 3:00PM EST)";
     			t2 = space();
     			div75 = element("div");
     			div50 = element("div");
@@ -26204,9 +26204,9 @@
     	$$invalidate('CFR', CFR               = 0.003*(1-0.72)+0.000042*0.72); // Fatlity Rate
     	$$invalidate('InterventionTime', InterventionTime  = 0);
     	$$invalidate('OMInterventionAmt', OMInterventionAmt = 4/10);
-    	Time              = 93;
+    	Time              = 94;
     	$$invalidate('Xmax', Xmax              = 110000);
-    	$$invalidate('dt', dt                = 1);
+    	$$invalidate('dt', dt                = 0.94);
     	$$invalidate('P_SEVERE', P_SEVERE          = 0.1239*(1-0.72)+0.72*0.1239/10); //Hospital Rate: https://covidtracking.com/data/state/indiana
     	$$invalidate('duration', duration          = 7*12*1e10);
     	$$invalidate('checked', checked = [true, true, false, true, true]);
