@@ -26202,8 +26202,8 @@
     	$$invalidate('D_recovery_severe', D_recovery_severe = (22.0)); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 12);//https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('CFR', CFR               = 0.003*(1-0.72)+0.000042*0.72); // Fatlity Rate
-    	$$invalidate('InterventionTime', InterventionTime  = 0);
-    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 9.5/10);
+    	$$invalidate('InterventionTime', InterventionTime  = 3);
+    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 9.4/10);
     	Time              = 94;
     	$$invalidate('Xmax', Xmax              = 110000);
     	$$invalidate('dt', dt                = 0.94);
