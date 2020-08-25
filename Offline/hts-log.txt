@@ -1,5 +1,5 @@
-HTTrack3.49-2+htsswf+htsjava launched on Mon, 24 Aug 2020 12:29:48 at https://here.nd.edu/our-approach/dashboard/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
-(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://here.nd.edu/our-approach/dashboard/ -O1 "C:\My Web Sites\NDDashbard" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 25 Aug 2020 12:01:18 at https://here.nd.edu/our-approach/dashboard/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qiC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://here.nd.edu/our-approach/dashboard/ -O1 "C:\My Web Sites\NDDashbard" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
 
 Information, Warnings and Errors reported for this mirror:
 note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
@@ -7,5 +7,5 @@ note:	the hts-log.txt file, and hts-cache folder, may contain sensitive informat
 	do not share these files/folders if you want these information to remain private
 
 
-HTTrack Website Copier/3.49-2 mirror complete in 35 seconds : 95 links scanned, 94 files written (2949603 bytes overall) [2784209 bytes received at 79548 bytes/sec], 274860 bytes transferred using HTTP compression in 24 files, ratio 29%, 15.8 requests per connection
+HTTrack Website Copier/3.49-2 mirror complete in 6 minutes 2 seconds : 96 links scanned, 95 files written (3035104 bytes overall), 2 files updated [107050 bytes received at 295 bytes/sec], 18958 bytes transferred using HTTP compression in 1 files, ratio 28%, 1.0 requests per connection
 (No errors, 0 warnings, 0 messages)
