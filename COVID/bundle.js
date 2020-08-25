@@ -22767,7 +22767,7 @@
     			link = element("link");
     			t0 = space();
     			h2 = element("h2");
-    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/24/2020 10:30PM EST)";
+    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/25/2020 12:15PM EST)";
     			t2 = space();
     			div75 = element("div");
     			div50 = element("div");
@@ -25789,7 +25789,7 @@
           return [dS, dE, dI, dMild, dSevere, dSevere_H, dFatal, dR_Mild, dR_Severe, dR_Fatal]
         }
 
-        var v = [1 - I0/N, 0/N, I0/N, 0/N, 0/N, 0/N, 0/N, 37/N, 0/N, 0/N];//INITIAL CONDITIONS
+        var v = [1 - I0/N, 0/N, I0/N, 0/N, 0/N, 0/N, 0/N, 51/N, 0/N, 0/N];//INITIAL CONDITIONS
         //[Susceptible, Exposed, Infectious, Recovering (Mild), Recovering (Severe at home), Recovering (Severe in hospital), Recovering (Fatal), Recovered Mild, Recovered Severe, Dead]
         var t = 0;
 
@@ -26194,8 +26194,8 @@
 
     	$$invalidate('Time_to_death', Time_to_death     = 18.5); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('logN', logN              = Math.log(17421)); //Total population
-    	$$invalidate('I0', I0                = (448-37)); //Initial infected
-    	$$invalidate('R0', R0                = Math.round((31.97111*0.72+1.00*(1-0.72))*1000)/1000); //Estimated R0 from best fit estimates using ML estimations
+    	$$invalidate('I0', I0                = (478-51)); //Initial infected
+    	$$invalidate('R0', R0                = Math.round((28.88974*0.72+1.00*(1-0.72))*1000)/1000); //Estimated R0 from best fit estimates using ML estimations
     	$$invalidate('D_incbation', D_incbation       = 5.4); //Estimated incubation time, usually between 5-6 days: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200402-sitrep-73-covid-19.pdf?sfvrsn=5ae25bc7_6#:~:text=The%20incubation%20period%20for%20COVID,persons%20can%20be%20contagious.
     	$$invalidate('D_infectious', D_infectious      = 5.0); //How long someone is infectious
     	$$invalidate('D_recovery_mild', D_recovery_mild   = (11)); // https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
