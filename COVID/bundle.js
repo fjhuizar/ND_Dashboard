@@ -22767,7 +22767,7 @@
     			link = element("link");
     			t0 = space();
     			h2 = element("h2");
-    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/21/2020 3:00PM EST)";
+    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 8/24/2020 10:15PM EST)";
     			t2 = space();
     			div75 = element("div");
     			div50 = element("div");
@@ -24035,7 +24035,7 @@
     			attr_dev(input3, "class", "range svelte-1vzb36m");
     			attr_dev(input3, "type", "range");
     			attr_dev(input3, "min", "0.01"); //LOWER BOUND INITIAL R0
-    			attr_dev(input3, "max", "20"); //UPPER BOUND INITIAL R0
+    			attr_dev(input3, "max", "35"); //UPPER BOUND INITIAL R0
     			attr_dev(input3, "step", "0.001");
     			add_location(input3, file$3, 951, 6, 34880);
     			attr_dev(div90, "class", "column svelte-1vzb36m");
@@ -25789,7 +25789,7 @@
           return [dS, dE, dI, dMild, dSevere, dSevere_H, dFatal, dR_Mild, dR_Severe, dR_Fatal]
         }
 
-        var v = [1 - I0/N, 0/N, I0/N, 0/N, 0/N, 0/N, 0/N, 8/N, 0/N, 0/N];//INITIAL CONDITIONS
+        var v = [1 - I0/N, 0/N, I0/N, 0/N, 0/N, 0/N, 0/N, 37/N, 0/N, 0/N];//INITIAL CONDITIONS
         //[Susceptible, Exposed, Infectious, Recovering (Mild), Recovering (Severe at home), Recovering (Severe in hospital), Recovering (Fatal), Recovered Mild, Recovered Severe, Dead]
         var t = 0;
 
@@ -26194,8 +26194,8 @@
 
     	$$invalidate('Time_to_death', Time_to_death     = 18.5); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('logN', logN              = Math.log(17421)); //Total population
-    	$$invalidate('I0', I0                = (336-8)); //Initial infected
-    	$$invalidate('R0', R0                = Math.round((2.392785*0.72+1.00*(1-0.72))*1000)/1000); //Estimated R0 from best fit estimates using ML estimations
+    	$$invalidate('I0', I0                = (448-37)); //Initial infected
+    	$$invalidate('R0', R0                = Math.round((31.97111*0.72+1.00*(1-0.72))*1000)/1000); //Estimated R0 from best fit estimates using ML estimations
     	$$invalidate('D_incbation', D_incbation       = 5.4); //Estimated incubation time, usually between 5-6 days: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200402-sitrep-73-covid-19.pdf?sfvrsn=5ae25bc7_6#:~:text=The%20incubation%20period%20for%20COVID,persons%20can%20be%20contagious.
     	$$invalidate('D_infectious', D_infectious      = 5.0); //How long someone is infectious
     	$$invalidate('D_recovery_mild', D_recovery_mild   = (11)); // https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
@@ -26203,7 +26203,7 @@
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 12);//https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('CFR', CFR               = 0.003*(1-0.72)+0.000042*0.72); // Fatlity Rate
     	$$invalidate('InterventionTime', InterventionTime  = 0);
-    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 4/10);
+    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 9.5/10);
     	Time              = 94;
     	$$invalidate('Xmax', Xmax              = 110000);
     	$$invalidate('dt', dt                = 0.94);
