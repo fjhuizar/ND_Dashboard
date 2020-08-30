@@ -152,16 +152,12 @@
 <script type='text/javascript'>
 var divElement = document.getElementById('viz1598759442436');
 var vizElement = divElement.getElementsByTagName('object')[0];
-vizElement.style.width='100%';vizElement.style.height='991px';
+vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
 var scriptElement = document.createElement('script');
 scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
 vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
 </div>
-
-<style>
-  html, body { height: 100% }
-</style>
 
 <p>The dashboard is updated daily at 12:00pm. Test results reflect Notre Dame administered diagnostic tests by the Wellness Center and University Health Services (including athletic team surveillance testing).</p>
 <p>All data are provisional and subject to change. One especially meaningful source of change results from PCR tests that are given on a particular day, for which we do not receive results until 1-2 days later. We count the tests on the day that they were administered. We also attribute positives to the day on which the test was taken. This may lead to the number of cases on a given day going up a few days later. This gives a more accurate sense of how case numbers are changing over time.</p>
