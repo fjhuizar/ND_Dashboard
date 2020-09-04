@@ -22767,7 +22767,7 @@
     			link = element("link");
     			t0 = space();
     			h2 = element("h2");
-    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 9/3/2020 12:00PM EST)";
+    			h2.textContent = "Notre Dame COVID Predictions Dashboard (Last Updated 9/4/2020 12:30PM EST)";
     			t2 = space();
     			div75 = element("div");
     			div50 = element("div");
@@ -25789,7 +25789,7 @@
           return [dS, dE, dI, dMild, dSevere, dSevere_H, dFatal, dR_Mild, dR_Severe, dR_Fatal]
         }
 
-        var v = [1 - I0/N, 0/N, I0/N, 0/N, 0/N, 0/N, 0/N, 449/N, 0/N, 0/N];//INITIAL CONDITIONS
+        var v = [1 - I0/N, 0/N, I0/N, 0/N, 0/N, 0/N, 0/N, 488/N, 0/N, 0/N];//INITIAL CONDITIONS
         //[Susceptible, Exposed, Infectious, Recovering (Mild), Recovering (Severe at home), Recovering (Severe in hospital), Recovering (Fatal), Recovered Mild, Recovered Severe, Dead]
         var t = 0;
 
@@ -26164,7 +26164,7 @@
     		if ($$dirty.dt || $$dirty.N || $$dirty.I0 || $$dirty.R0 || $$dirty.D_incbation || $$dirty.D_infectious || $$dirty.D_recovery_mild || $$dirty.D_hospital_lag || $$dirty.D_recovery_severe || $$dirty.D_death || $$dirty.P_SEVERE || $$dirty.CFR || $$dirty.InterventionTime || $$dirty.InterventionAmt || $$dirty.duration) { $$invalidate('Sol', Sol            = get_solution(dt, N, I0, R0, D_incbation, D_infectious, D_recovery_mild, D_hospital_lag, D_recovery_severe, D_death, P_SEVERE, CFR, InterventionTime, InterventionAmt, duration)); }
     		if ($$dirty.Sol) { $$invalidate('P', P              = Sol["P"].slice(0,100)); }
     		if ($$dirty.dt) { $$invalidate('timestep', timestep       = dt); }
-    		if ($$dirty.dt) { $$invalidate('tmax', tmax           = dt*80); } //ADJUST DATE HERE
+    		if ($$dirty.dt) { $$invalidate('tmax', tmax           = dt*79); } //ADJUST DATE HERE
     		if ($$dirty.Sol) { $$invalidate('deaths', deaths         = Sol["deaths"]); }
     		if ($$dirty.Sol) { $$invalidate('total', total          = Sol["total"]); }
     		if ($$dirty.Sol) { $$invalidate('total_infected', total_infected = Sol["total_infected"].slice(0,100)); }
@@ -26194,8 +26194,8 @@
 
     	$$invalidate('Time_to_death', Time_to_death     = 18.5); //https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('logN', logN              = Math.log(17421)); //Total population
-    	$$invalidate('I0', I0                = (599-449)); //Initial infected
-    	$$invalidate('R0', R0                = Math.round((11.4682*0.72+1.05*(1-0.72))*1000)/1000); //Estimated R0 from best fit estimates using ML estimations
+    	$$invalidate('I0', I0                = (604-488)); //Initial infected
+    	$$invalidate('R0', R0                = Math.round((10.55303*0.72+1.06*(1-0.72))*1000)/1000); //Estimated R0 from best fit estimates using ML estimations
     	$$invalidate('D_incbation', D_incbation       = 5.4); //Estimated incubation time, usually between 5-6 days: https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200402-sitrep-73-covid-19.pdf?sfvrsn=5ae25bc7_6#:~:text=The%20incubation%20period%20for%20COVID,persons%20can%20be%20contagious.
     	$$invalidate('D_infectious', D_infectious      = 5.0); //How long someone is infectious
     	$$invalidate('D_recovery_mild', D_recovery_mild   = (11)); // https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
@@ -26203,8 +26203,8 @@
     	$$invalidate('D_hospital_lag', D_hospital_lag    = 12);//https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/
     	$$invalidate('CFR', CFR               = 0.003*(1-0.72)+0.000042*0.72); // Fatlity Rate
     	$$invalidate('InterventionTime', InterventionTime  = 0);
-    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 8.83/10);
-    	Time              = 80;
+    	$$invalidate('OMInterventionAmt', OMInterventionAmt = 8.675/10);
+    	Time              = 79;
     	$$invalidate('Xmax', Xmax              = 110000);
     	$$invalidate('dt', dt                = 1);
     	$$invalidate('P_SEVERE', P_SEVERE          = 0.1239*(1-0.72)+0.72*0.1239/10); //Hospital Rate: https://covidtracking.com/data/state/indiana
